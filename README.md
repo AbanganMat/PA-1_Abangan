@@ -9,8 +9,8 @@ Write a Python script/code in the Jupyter Notebook to do the given problems. You
 notebook in the dedicated submission bin.
 
 # ALPHABET SOUP PROBLEM
-
-# Define function
+```
+Define function
 def alphabet(string):
     # Sort Characters
     char_list = list(string)
@@ -27,10 +27,10 @@ def alphabet(string):
 # Output
 print(alphabet("iamlightningspeed"))
 print(alphabet("supercalifragilisticexpialidocious"))
-
+```
 # EMOTICON PROBLEM
-
-# Define function
+```
+Define function
 def emotify(sentence):
     # Mapping words to emoticons
     mapping = {
@@ -60,9 +60,9 @@ def emotify(sentence):
 print(emotify("Make me smile but at the same time, make me sad"))
 print(emotify("Currently feeling sad but I smile like never happened"))
 print(emotify("smile until the end and grin like a man, carry on"))
-
+```
 # Unpacking List Problem
-
+```
 # Define function
 def unpack_list(lst):
     # Get first element
