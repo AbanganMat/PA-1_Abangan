@@ -1,4 +1,4 @@
-# Experiment 1 
+# Experiment 1 - Abangan
 
 # I. Intended Learning Outcomes:
 1. To identify the basic codes and functions in Python Programming
