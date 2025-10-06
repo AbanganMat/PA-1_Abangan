@@ -10,29 +10,31 @@ notebook in the dedicated submission bin.
 
 # ALPHABET SOUP PROBLEM
 ```
-Define function
+# Define a function named 'alphabet' that takes one input: string
 def alphabet(string):
-    # Sort Characters
+    # Convert the string into a list of characters
     char_list = list(string)
 
-    # Sort in Alphabetical Order
+    # Sort the list of characters in alphabetical order
     sorted_list = sorted(char_list)
 
-    # Join into a single string
+    # Join the sorted characters back into a single string
     sorted_string = "".join(sorted_list)
 
-    # Return Sorted String
+    # Return the sorted string
     return sorted_string
 
-# Output
+# Test the function with two examples and print the results
 print(alphabet("iamlightningspeed"))
 print(alphabet("supercalifragilisticexpialidocious"))
 ```
+<img width="275" height="41" alt="Screenshot 2025-10-06 at 08 43 25" src="https://github.com/user-attachments/assets/eb0c5c7f-2a61-4655-913f-f7bbc686e6dc" />
+
 # EMOTICON PROBLEM
 ```
-Define function
+# Define a function named 'emotify' that takes one input: sentence
 def emotify(sentence):
-    # Mapping words to emoticons
+    # A dictionary that maps certain words to their corresponding emoticons
     mapping = {
         "smile": ":)",
         "grin": ":D",
@@ -40,48 +42,56 @@ def emotify(sentence):
         "mad": ">:("
     }
     
-    # Split sentence into pieces
+    # Split the sentence into individual words
     words = sentence.split()
     
-    # Empty list to store converted words
+    # Create an empty list to store the converted words
     converted = []
     
-    # Loop through each word
+    # Go through each word in the sentence
     for w in words:
+        # If the word is in the mapping dictionary, replace it with an emoticon
         if w in mapping:
-            converted.append(mapping[w])  # replace with emoticon
+            converted.append(mapping[w])
+        # Otherwise, keep the original word
         else:
-            converted.append(w)  # keep original sentence
+            converted.append(w)
     
-    # Return the final string
+    # Join all the words (and emoticons) back into a single string
     return " ".join(converted)
 
-# Output
+# Test the function with example sentences
 print(emotify("Make me smile but at the same time, make me sad"))
 print(emotify("Currently feeling sad but I smile like never happened"))
 print(emotify("smile until the end and grin like a man, carry on"))
 ```
+<img width="392" height="51" alt="Screenshot 2025-10-06 at 08 43 34" src="https://github.com/user-attachments/assets/8db718ee-9915-4633-89e3-6c8948494510" />
+
 # Unpacking List Problem
 ```
-# Define function
+# Define a function named 'unpack_list' that takes one input: lst (a list)
 def unpack_list(lst):
-    # Get first element
+    # Get the first element of the list
     first = lst[0]
 
-    # Get last element (count length and subtract 1)
+    # Get the last element of the list using its length
     last = lst[len(lst) - 1]
 
-    # Get middle elements (everything except first and last)
+    # Get all the middle elements (everything except the first and last)
     middle = lst[1:len(lst)-1]
 
-    # Return results
+    # Return the three parts: first, middle, and last
     return first, middle, last
 
-# Example usage
+# Example list to test the function
 numbers = [1, 2, 3, 4, 5, 6]
+
+# Call the function and store the returned values
 first, middle, last = unpack_list(numbers)
 
-# Output
+# Display the results
 print("first:", first)
 print("middle:", middle)
 print("last:", last)
+```
+<img width="163" height="51" alt="Screenshot 2025-10-06 at 08 43 42" src="https://github.com/user-attachments/assets/8a7abdb0-cbd6-4a5b-ada5-c42efad778bf" />
